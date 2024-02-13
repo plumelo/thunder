@@ -1,5 +1,5 @@
 {
-  "name": "thunder",
+  "name": "@plumelo/thunder",
   "version": "1.0.0",
   "keywords": [
     "lightningcss",
@@ -31,7 +31,7 @@
     "./resolve": "./dist/listbox/resolve.js"
   },
   "dependencies": {
-    "browserslist": "^4.22.3",
+    "browserslist": "^4.22.0",
     "enhanced-resolve": "^5.15.0",
     "lightningcss": "^1.23.0"
   },
