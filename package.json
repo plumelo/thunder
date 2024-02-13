@@ -1,0 +1,44 @@
+{
+  "name": "thunder",
+  "version": "1.0.0",
+  "keywords": [
+    "lightningcss",
+    "css-modules"
+  ],
+  "author": "Iulian Meghea <iulian@plumelo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plumelo/thunder/issues"
+  },
+  "homepage": "https://github.com/plumelo/thunder#readme",
+  "description": "A tiny wrapper around lightningcss",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tsc && eslint --cache .",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plumelo/thunder.git"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./resolve": "./dist/listbox/resolve.js"
+  },
+  "dependencies": {
+    "browserslist": "^4.22.3",
+    "enhanced-resolve": "^5.15.0",
+    "lightningcss": "^1.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  }
+}
