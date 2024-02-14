@@ -1,6 +1,7 @@
 {
   "name": "@plumelo/thunder",
   "version": "1.0.0",
+  "type": "module",
   "keywords": [
     "lightningcss",
     "css-modules"
