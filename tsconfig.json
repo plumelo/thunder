@@ -3,7 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "strict": true,
     "target": "ES2019"
   }
