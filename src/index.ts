@@ -54,3 +54,4 @@ const thunder = async <C extends CustomAtRules>(
   );
 
 export default thunder;
+export { resolver };
