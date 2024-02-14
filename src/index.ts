@@ -43,6 +43,14 @@ const normalizeResult = (res: TransformResult): ThunderResult => {
 const thunder = async <C extends CustomAtRules>(
   options: BundleAsyncOptions<C>,
 ): Promise<ThunderResult> =>
-  normalizeResult(await bundleAsync(normalizeOptions(options)));
+  normalizeResult(
+    await bundleAsync(normalizeOptions(options)).catch((e) =>
+      Promise.reject(
+        new Error(
+          `Failed to bundle css. ${e.data} ${e.fileName} ${e.loc.line}:${e.loc.column}`,
+        ),
+      ),
+    ),
+  );
 
 export default thunder;
