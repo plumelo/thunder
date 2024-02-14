@@ -7,7 +7,7 @@ import {
   TransformResult,
 } from "lightningcss";
 
-import { resolver } from "./resolve";
+import { resolver } from "./resolve.js";
 
 const defaultResolver = resolver();
 
