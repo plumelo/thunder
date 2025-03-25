@@ -6,7 +6,6 @@ import {
   BundleAsyncOptions,
   TransformResult,
 } from "lightningcss";
-//eslint-disable-next-line
 import { resolver } from "./resolve.js";
 
 const defaultResolver = resolver();

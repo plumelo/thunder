@@ -16,4 +16,13 @@ export default tseslint.config(
       importPlugin.flatConfigs.typescript,
     ],
   },
+  {
+    settings: {
+      "import/resolver": {
+        typescript: {
+          extensions: [".js", ".ts"],
+        },
+      },
+    },
+  },
 );
