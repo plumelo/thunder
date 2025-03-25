@@ -40,17 +40,17 @@
     "lightningcss": "^1.23.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.23.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^22.10.8",
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^8.0.0",
-    "eslint": "^8.56.0",
+    "eslint": "^9.0.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-import-resolver-typescript": "^4.2.2",
     "eslint-plugin-import": "^2.29.1",
     "prettier": "^3.2.5",
     "semantic-release": "^24.2.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.28.0"
   }
 }
