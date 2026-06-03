@@ -6,6 +6,9 @@ import importPlugin from "eslint-plugin-import";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 
 export default tseslint.config(
+  {
+    ignores: ["dist/**", "node_modules/**"],
+  },
   eslint.configs.recommended,
   eslintConfigPrettier,
   tseslint.configs.recommended,
