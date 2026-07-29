@@ -14,6 +14,11 @@
   "homepage": "https://github.com/plumelo/thunder#readme",
   "description": "A tiny wrapper around lightningcss",
   "main": "index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "lint": "tsc && eslint --cache .",
     "build": "tsc -p tsconfig.build.json"
@@ -31,13 +36,19 @@
     "LICENSE"
   ],
   "exports": {
-    ".": "./dist/index.js",
-    "./resolve": "./dist/listbox/resolve.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./resolve": {
+      "types": "./dist/resolve.d.ts",
+      "default": "./dist/resolve.js"
+    }
   },
   "dependencies": {
-    "browserslist": "^4.22.0",
-    "enhanced-resolve": "^5.15.0",
-    "lightningcss": "^1.23.0"
+    "browserslist": "^4.28.7",
+    "enhanced-resolve": "^5.24.4",
+    "lightningcss": "^1.33.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",

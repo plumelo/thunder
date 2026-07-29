@@ -3,10 +3,9 @@
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "strict": true,
     "target": "ES2022",
-    "ignoreDeprecations": "6.0",
     "types": ["node"]
   }
 }
